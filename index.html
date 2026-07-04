@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta name="google-site-verification" content="BiXExf5Y8oMKMzbTAV4nB2e6fNP0AAN8F3ZCVe9ZJtA" />
- </head>
- <body>
-  It works!
- </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text2Link - Google Sheet Add-on</title>
+    
+    <!-- PASTE YOUR GOOGLE SITE VERIFICATION TAG IMMEDIATELY BELOW THIS LINE -->
+    <meta name="google-site-verification" content="BiXExf5Y8oMKMzbTAV4nB2e6fNP0AAN8F3ZCVe9ZJtA" />
+
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        header { border-bottom: 2px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #1a73e8; margin-bottom: 5px; }
+        .subtitle { color: #666; font-size: 1.2rem; margin-top: 0; }
+        .container { background: #f8f9fa; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0; margin-bottom: 30px; }
+        footer { font-size: 0.9rem; color: #888; border-top: 1px solid #f0f0f0; padding-top: 20px; text-align: center; }
+        a { color: #1a73e8; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .links-box { display: flex; gap: 20px; justify-content: center; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Text2Link</h1>
+        <p class="subtitle">The self-contained hyperlink tool for Google Sheets</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>About the Add-on</h2>
+            <p><strong>Text2Link</strong> is a lightweight, secure productivity tool designed to convert text strings into functional, clickable hyperlinks directly inside your active spreadsheet. It is built entirely on Google Apps Script and operates with minimal permissions.</p>
+        </section>
+
+        <section>
+            <h2>Security & Operational Model</h2>
+            <ul>
+                <li><strong>No External Infrastructure:</strong> The add-on uses zero external databases, APIs, or third-party web servers. Your data stays entirely inside Google.</li>
+                <li><strong>Scoped Execution:</strong> Text2Link explicitly utilizes the restricted <code>@OnlyCurrentDoc</code> scope. It is strictly prohibited from accessing, viewing, or modifying any other files in your Google Drive.</li>
+                <li><strong>User Privacy First:</strong> Because the execution environment is completely isolated within your active document, no user data, text strings, or sheet metrics are ever collected, stored, or transmitted to outside networks.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Text2Link. All rights reserved.</p>
+        <div class="links-box">
+            <a href="index.html">Home</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
 </html>
